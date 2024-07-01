@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-06-27T17:37:29.666938" rpa="false" schemaversion="5">
+<suite id="s1" name="TC1" source="/Users/perammahendrareddy/Automation/pythonProject1/TestCases/TC1.robot">
+<test id="s1-t1" name="Lanch browser" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-27T17:37:29.805202" level="INFO">Opening browser 'chrome' to base url 'https://practo.com/'.</msg>
+<arg>https://practo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-27T17:37:29.805023" elapsed="3.268666"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-27T17:37:33.074430" elapsed="0.397074"/>
+</kw>
+<status status="PASS" start="2024-06-27T17:37:29.804349" elapsed="3.667614"/>
+</test>
+<test id="s1-t2" name="search_dentist" line="9">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-27T17:37:33.474675" level="INFO">Typing text 'Bangalore' into text field 'xpath://*[@id="c-omni-container"]/div/div[1]/div[1]/input'.</msg>
+<arg>xpath://*[@id="c-omni-container"]/div/div[1]/div[1]/input</arg>
+<arg>Bangalore</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-27T17:37:33.473409" elapsed="0.243984"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-27T17:37:34.718442" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-27T17:37:33.717807" elapsed="1.000851"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-27T17:37:34.719620" level="INFO">Clicking element 'xpath://*[@id="c-omni-container"]/div/div[1]/div[2]/div[2]/div[1]'.</msg>
+<arg>xpath://*[@id="c-omni-container"]/div/div[1]/div[2]/div[2]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-27T17:37:34.719222" elapsed="0.067678"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-27T17:37:34.787428" level="INFO">Typing text 'dentist' into text field 'xpath://*[@id="c-omni-container"]/div/div[2]/div/input'.</msg>
+<arg>xpath://*[@id="c-omni-container"]/div/div[2]/div/input</arg>
+<arg>dentist</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-27T17:37:34.787216" elapsed="0.104510"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-27T17:37:36.892755" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-27T17:37:34.892101" elapsed="2.000876"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-27T17:37:36.893912" level="INFO">Clicking element 'xpath://*[@id="c-omni-container"]/div/div[2]/div[2]/div[1]/div[1]'.</msg>
+<arg>xpath://*[@id="c-omni-container"]/div/div[2]/div[2]/div[1]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-27T17:37:36.893508" elapsed="1.588433"/>
+</kw>
+<status status="PASS" start="2024-06-27T17:37:33.472444" elapsed="5.009750"/>
+</test>
+<test id="s1-t3" name="display_doctor_profile" line="17">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://*[@id="container"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div/div[1]/div[2]/a</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-27T17:37:38.482900" elapsed="0.024594"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-06-27T17:37:38.508049" level="INFO">Clicking link 'xpath://*[@id="container"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div/div[1]/div[2]/a'.</msg>
+<arg>xpath://*[@id="container"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div/div[1]/div[2]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-27T17:37:38.507799" elapsed="0.113258"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-27T17:37:43.622586" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-27T17:37:38.621320" elapsed="5.001479"/>
+</kw>
+<status status="PASS" start="2024-06-27T17:37:38.482522" elapsed="5.140737"/>
+</test>
+<test id="s1-t4" name="bookAppoint" line="21">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-06-27T17:37:54.296794" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-80.png"&gt;&lt;img src="selenium-screenshot-80.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-27T17:37:54.296954" level="FAIL">Element 'css:div.c-day-slot__next-btn~c-apt-btn--dark-fitY' not visible after 10 seconds.</msg>
+<arg>css:div.c-day-slot__next-btn~c-apt-btn--dark-fitY</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-06-27T17:37:43.624172" elapsed="10.673839">Element 'css:div.c-day-slot__next-btn~c-apt-btn--dark-fitY' not visible after 10 seconds.</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css:div.c-day-slot__next-btn~c-apt-btn--dark-fitY</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-27T17:37:54.298203" elapsed="0.000029"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-27T17:37:54.298376" elapsed="0.000024"/>
+</kw>
+<status status="FAIL" start="2024-06-27T17:37:43.623695" elapsed="10.674863">Element 'css:div.c-day-slot__next-btn~c-apt-btn--dark-fitY' not visible after 10 seconds.</status>
+</test>
+<status status="FAIL" start="2024-06-27T17:37:29.668416" elapsed="24.630495"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="1" skip="0" id="s1" name="TC1">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
